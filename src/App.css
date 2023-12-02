@@ -12,10 +12,15 @@ body {
   height: 100vh;
 }
 
+.logo-img {
+  fill: #006D48;
+  margin-bottom: 30px;
+}
+
 .left-box {
   background-color: #fff;
-  width: 35%; 
-  padding: 20px;
+  width: 35%;
+  padding: 25px 64px 64px 64px;
   box-sizing: border-box;
 }
 
@@ -40,13 +45,6 @@ body {
   margin-bottom: 10px;
 }
 
-.input {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-}
-
 .button {
   padding: 10px;
   background-color: #4caf50;
@@ -54,4 +52,193 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.welcome-text {
+  color: #222B33;
+  font-family: 'Sora Variable';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+  margin-bottom: 12px;
+}
+
+.welcome-line,
+.back-line {
+  display: block;
+}
+
+.info-line {
+  color: #3B4752;
+  font-family: Public Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  color: #222B33;
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid #CFD8E1;
+  background: #F9FAFB;
+  padding: 8px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.input-label {
+  color: #222B33;
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; 
+  margin-bottom: 8px;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input span {
+  position: absolute;
+  right: 5px;
+  top: 16px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.checkbox-label {
+  color: #000;
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 24px; 
+  margin-left: 10px;
+}
+
+.forgot-link {
+  color: #000;
+  text-align: right;
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; 
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 20px;
+  border-radius: 2px;
+  border: 1px solid #00E687;
+  background: #50F89A;
+  display: flex;
+  height: 48px;
+  padding: 14px 12px;
+  justify-content: center;
+  width: 100%;
+}
+
+.button-label {
+  color: #005237;
+  text-align: center;
+  font-family: Sora Variable;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 460;
+  line-height: 18px; 
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; 
+  }
+
+  .left-box {
+    width: 80%;
+    padding: 25px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px; 
+    margin-top: 10px;
+  }
+
+  .right-image {
+    width: 100%;
+    height: auto;
+    order: -1; 
+    margin-top: 20px; 
+  }
+
+  .welcome-text {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .info-line {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .input {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+  }
+
+  .password-input span {
+    top: 12px;
+  }
+
+  .remember-forgot {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .button {
+    margin-top: 20px;
+  }
+
+  .checkbox-label,
+  .forgot-link {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
